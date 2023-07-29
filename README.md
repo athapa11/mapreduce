@@ -1,2 +1,2 @@
-# mapreduce-2021
-Hadoop MapReduce implementation to create engrams from large-scale of books.
+# Hadoop MapReduce
+This repository contains Java code for a Hadoop MapReduce implementation to create n-grams from a large scale of book titles.
