@@ -17,7 +17,7 @@ letters a to g, letters h to m, letters n to s, letters t to z, and other specia
 resulting output found in the bucket, the first output would be all the special characters sorted,
 followed by the numbers and finally the alphabet.
 
-## Optimisation
+## Steps taken to optimise execution time
 1. Increased the number of worker nodes from 2 to 4 when creating the cluster to maximise
 performance.
 2. I have prevented the allocation of countless of short-lived objects by creating the objects
