@@ -7,7 +7,7 @@ input in the mapper, which is then string-tokenised. When there are tokens to st
 variables, the string variables are used to create an engram. Afterwards, words are shifted in a
 direction once to create the next engram, until there are no tokens left.
 
-## Alphabetical Sorting
+### Alphabetical Sorting
 The output of 4-grams is sorted alphabetically by their first word globally, across all reducers. This is
 done using a custom partitioner I have implemented, which allows the workload of all reducers to be
 balanced as much as possible. The partitioner partitions map output by using the ASCII decimal value
@@ -17,7 +17,7 @@ letters a to g, letters h to m, letters n to s, letters t to z, and other specia
 resulting output found in the bucket, the first output would be all the special characters sorted,
 followed by the numbers and finally the alphabet.
 
-## Steps taken to optimise execution time
+### Steps taken to optimise execution time
 1. Increased the number of worker nodes from 2 to 4 when creating the cluster to maximise
 performance.
 2. I have prevented the allocation of countless of short-lived objects by creating the objects
